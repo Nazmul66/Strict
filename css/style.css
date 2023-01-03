@@ -1,0 +1,364 @@
+/*========================
+     Google fonts file
+ =========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+/*========================
+     Global CSS start
+ =========================*/
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+ text-decoration: none;
+}
+
+#popup {
+  position: fixed;
+  width: 450px;
+  height: 400px;
+  top: -150%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  background: #FFF;
+  text-align: center;
+  display: block;
+  z-index: 99;
+  transition: all o.3s ease-in-out;
+}
+#popup.active{
+ top: 50%;
+  transition: all o.3s ease-in-out;
+}
+
+/*========================
+   header section start
+ =========================*/
+ header{
+ padding: 20px 0;
+}
+
+/*========================
+    banner section start
+ =========================*/
+.banner-section{
+ background: url(../image/bg-banner.jpg) no-repeat center top;
+ background-size: cover;
+ padding: 150px 0 75px 0;
+}
+.banner-section h1{
+    font-size: 105px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.banner-section .underline{
+    width: 48%;
+    height: 2px;
+    background: #15a4fa;
+    margin: 0 auto;
+}
+.banner-section p{
+    font-size: 20px;
+    color: #dddcde;
+    text-align: center;
+    margin: 20px auto;
+}
+.banner-section .btn-hb{
+    color: #fff;
+    border: 1px solid #15a4fa;
+    border-radius: 3px;
+    padding: 16px 48px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    width: 220px;
+    margin: 50px auto;
+    transition: all 0.3s ease-in-out;
+}
+.banner-section .btn-hb:hover{
+   background: #15a4fa;
+   transition: all 0.3s ease-in-out;
+}
+.banner-section i{
+  color: #fff;
+ display: block;
+ text-align: center;
+ margin-top: 175px;
+}
+
+/*========================
+    Details section start
+ =========================*/
+.details-section{
+  padding: 75px 0;
+ background: #f6f9f9;
+}
+.details-section h1{
+     text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.details-section p{
+      text-align: center;
+    color: #999;
+    padding: 0 125px;
+    line-height: 23px;
+}
+
+/*==========================
+    Features section start
+ ===========================*/
+.feature-section{
+ padding: 75px 0;
+}
+.icons .image-area{
+ display: block;
+ margin: 0 auto 28px;
+}
+.icons h2{
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.icons p{
+  color: #999;
+  text-align: center;
+  padding: 0 18px;
+  font-size: 16px; 
+}
+
+/*===========================
+    Portfolio section start
+ ============================*/
+.portfolio-section{
+  padding: 75px 0 110px;
+  background: #f6f9f9;
+}
+.portfolio-section h1{
+      text-align: center;
+    margin-bottom: 10px;
+    color: #2d3950;
+    font-weight: 500;
+    font-size: 40px;
+}
+.portfolio-section p{
+  text-align: center;
+  color: #909090;
+  margin-bottom: 75px;
+}
+.image-file{
+position: relative;
+overflow: hidden;
+margin-bottom: 25px;
+}
+.simage{
+  width: 100%;
+}
+.image-flutter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(29,156,234,0.9);
+    top: 0;
+    top: -100%;
+    transition: all 0.3s ease-in-out;
+}
+.image-file:hover .image-flutter{
+  top: 0;
+ transition: all 0.3s ease-in-out;
+}
+.image-flutter ul{
+ padding: 0;
+text-align: center;
+ margin-top: 30%;
+}
+.image-flutter ul li{
+  display: inline;
+  list-style: none;
+}
+.image-flutter ul li i{
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #f7f7f7;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+/*========================
+    form section start
+ =========================*/
+.form-section{
+ background: url(../image/form-bg.jpg) no-repeat center;
+ background-size: cover;
+ padding: 75px 0 100px 0;
+}
+.form-section h2{
+    text-align: center;
+    color: #f7f7f7;
+    font-size: 44px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+.form-section p{
+     text-align: center;
+    color: #999;
+    font-size: 15px;
+    margin-bottom: 48px;
+}
+.forms .form-box{
+     display: block;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 16px;
+    background: transparent;
+    padding: 0 12px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #f7f7f7;
+}
+.forms .form-box1{
+     display: block;
+    width: 100%;
+    height: 175px;
+    margin-bottom: 16px;
+    background: transparent;
+    padding:12px ;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #f7f7f7;
+}
+.forms .form-box,
+.forms .form-box1:focus {
+  outline: none;
+}
+.mailbox label{
+     color: #f7f7f7;
+    font-size: 14px;
+}
+.mailbox .checkbox{
+    margin: 12px 10px 0 0;
+}
+.mailbox .btn-main{
+  float: right;
+    padding: 6px 45px;
+    background: transparent;
+    border: 1px solid #15a4fa;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+}
+.mailbox .btn-main:hover{
+  transition: all 0.3s ease-in-out;
+  background: #15a4fa;
+}
+
+/*========================
+    footer section start
+ =========================*/
+ footer{
+  padding: 30px 0 10px 0;
+}
+footer p{
+      font-size: 14px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.social-icon ul{
+  padding: 0;
+  text-align: right;
+}
+.social-icon ul li{
+ list-style: none;
+ display: inline;
+ margin-right: 2px;
+}
+.social-icon ul li i{
+     width: 35px;
+    height: 35px;
+    background: #15a4fa;
+    text-align: center;
+    line-height: 35px;
+}
+.social-icon ul li a{
+  color:#fff;
+}
+
+
+
+      /* Responsive for mobile device */
+
+@media (min-width: 577px) and (max-width: 768px){
+
+ .banner-section { padding: 75px 0;}
+ .banner-section h1 { font-size: 75px;}
+ .banner-section .btn-hb { margin: 35px auto 0;}
+ .banner-section i { margin-top: 40px; font-size: 25px;}
+
+ .details-section { padding: 60px 0;}
+ .details-section p { padding: 0; margin: 0;}
+
+ .feature-section {padding: 75px 0 10px;}
+ .icons { margin-bottom: 60px }
+ .icons .image-area { width: 90px; margin: 0 auto 20px;}
+ .icons h2 { margin-bottom: 10px;}
+ .icons p { margin: 0;}
+
+ .portfolio-section { padding: 60px 0 ;}
+
+ .form-section { padding: 70px 0 80px 0;}
+
+ footer {padding: 24px 0;}
+ footer p { font-size: 18px; margin-top: 0; text-align: center;}
+ .social-icon ul {text-align: center; margin: 0;}
+
+}
+
+
+      /* Responsive for mobile device */
+
+@media (min-width: 320px) and (max-width: 576px){
+
+.banner-section {padding: 60px 0;}
+.banner-section h1 {font-size: 75px;}
+.banner-section .underline { width: 30%;}
+.banner-section .btn-hb { margin: 25px auto;}
+.banner-section i { font-size: 26px; margin-top: 36px;}
+
+.details-section { padding: 60px 0;}
+.details-section h1 {font-size: 34px;}
+.details-section p { text-align: center; margin: 0; padding: 0;}
+
+.feature-section { padding: 60px 0 0;}
+.icons{margin-bottom: 50px;}
+.icons .image-area { margin: 0 auto 24px;}
+.icons h2 { margin-bottom: 16px;}
+.icons p { padding: 0 30px; margin: 0;}
+
+.portfolio-section h1 {margin-bottom: 16px;}
+.portfolio-section p {font-size: 20px; margin-bottom: 65px;}
+.portfolio-section { padding: 75px 0 75px;}
+
+.form-section { padding: 60px 0;}
+
+footer { padding: 15px 0;}
+footer p { margin-top: 0; text-align: center;}
+.social-icon ul { margin: 0;text-align: center;}
+
+}
